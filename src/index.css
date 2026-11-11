@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  background: #f3f4f6;
+  font-family: sans-serif;
+  color: #111827;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: #111827;
+}
+
+.nav a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.nav a.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  padding: 28px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  word-break: break-word;
+}
+
+.card h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input {
+  padding: 11px 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form button,
+.logout {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  background: #93c5fd;
+  cursor: wait;
+}
+
+.logout {
+  width: 100%;
+  margin-top: 12px;
+  background: #dc2626;
+}
+
+.logout:hover {
+  background: #b91c1c;
+}
+
+.message {
+  margin: 16px 0 0;
+  font-size: 14px;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.success {
+  color: #16a34a;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 14px;
+}
